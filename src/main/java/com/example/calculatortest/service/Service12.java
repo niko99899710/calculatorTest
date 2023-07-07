@@ -1,8 +1,10 @@
-package service;
+package com.example.calculatortest.service;
 
+import com.example.calculatortest.exception.ZeroDividerException;
 import org.springframework.stereotype.Service;
-    @Service
-    public class Service12 implements ServiceCalculator {
+
+@Service
+    public class Service12 implements Service12Impl {
         @Override
         public String calculator() {
             return null;

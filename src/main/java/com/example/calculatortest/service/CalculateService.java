@@ -1,4 +1,4 @@
-package service;
+package com.example.calculatortest.service;
 
 import org.springframework.stereotype.Service;
 

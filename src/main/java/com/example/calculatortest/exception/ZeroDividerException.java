@@ -1,4 +1,4 @@
-package service;
+package com.example.calculatortest.exception;
 
 public class ZeroDividerException extends Throwable {
     private String detail;

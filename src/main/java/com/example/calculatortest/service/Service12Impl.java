@@ -1,6 +1,6 @@
-package service;
+package com.example.calculatortest.service;
 
-public interface ServiceCalculator {
+public interface Service12Impl {
 
     String calculator();
     String writeCalculator();

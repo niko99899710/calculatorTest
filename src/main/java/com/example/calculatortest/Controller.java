@@ -1,26 +1,21 @@
 package com.example.calculatortest;
 
+import com.example.calculatortest.service.Service12Impl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import service.ServiceCalculator;
+
 @RestController
 public class Controller {
-        private final ServiceCalculator calculateService;
-        private final ServiceCalculator serviceCalculator;
-        private final ServiceCalculator service12;
+        private final Service12Impl calculateService;
+        private final Service12Impl serviceCalculator;
+        private final Service12Impl service12;
 
-    public Controller() {
-            this(null, null, null);
-        }
-
-    public Controller(ServiceCalculator calculateService, ServiceCalculator serviceCalculator, ServiceCalculator service12) {
+    public Controller(Service12Impl calculateService, Service12Impl serviceCalculator, Service12Impl service12) {
         this.calculateService = calculateService;
         this.serviceCalculator = serviceCalculator;
         this.service12 = service12;
     }
-
-
     @GetMapping
         public String Calculator () {
             return calculateService.calculator();
