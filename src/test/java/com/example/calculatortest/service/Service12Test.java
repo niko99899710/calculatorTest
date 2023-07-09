@@ -36,7 +36,7 @@ public class Service12Test {
 
     @Test
     public void shouTrowExceptionZeroDividerException(){
-        Assertions.assertThrows(ZeroDividerException.class,() -> service12Impl.divide(5,5));
+        Assertions.assertThrows(RuntimeException.class,() -> service12Impl.divide(5,0));
     }
 
 

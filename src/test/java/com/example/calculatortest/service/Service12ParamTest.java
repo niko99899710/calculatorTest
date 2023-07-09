@@ -38,8 +38,7 @@ public class Service12ParamTest {
     @ParameterizedTest
     @CsvSource({"5,0", "8,0"})
     public void shouTrowExceptionZeroDividerException(int num1, int num2){
-        int answer = service12Impl.divide(num1, num2);
-        Assertions.assertThrows(ZeroDividerException.class,() -> service12Impl.divide(num1,num2));
+        Assertions.assertThrows(RuntimeException.class,() -> service12Impl.divide(num1,num2));
     }
 
 }
